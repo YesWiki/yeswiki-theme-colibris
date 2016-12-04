@@ -1,0 +1,409 @@
+body {
+  background: url('../images/fond_1920.jpg') repeat-x top center;
+  -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;
+  background-attachment:fixed;
+}
+.yeswiki-topnav-fast-access {
+  position: absolute;
+  right: @line-height-computed;
+  z-index: 1;
+}
+.yeswiki-topnav-fast-access .dropdown-menu {
+  top: 50px;
+  left: -117px;
+}
+
+.fullwidth-header {
+  min-height: 291px;
+}
+
+.affix {
+  z-index: @zindex-navbar-fixed;
+}
+.navbar-brand img {
+    margin: -@line-height-computed 0;
+}
+.navbar + .main-container { margin-top: -@navbar-margin-bottom}
+.main-container {
+  background-color: @white;
+  clear:both;
+}
+
+.main-body {
+  margin-top: @navbar-margin-bottom;
+}
+
+.white, .white h1, .white h2, .white h3, .white h4, .white h5, .white h6 {
+  color:@white;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.navbar-nav > li > a {
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+    width: 117px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 15px;
+}
+.navbar-nav > li > a .caret {
+  display: none;
+}
+.yeswiki-topnav .dropdown-menu {
+  width: 160;
+  left: -22px !important;
+  top: -2px;
+}
+.dropdown-menu > li > a {
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 12px;
+  white-space: normal;
+  padding: 5px 20;
+}
+.navbar-nav > li > a:not(.btn-oasis)::before {
+  content: ' ';
+  width: 107px !important;
+  height: 107px !important;
+  display: block !important;
+  background: url(../images/icons-sprite.png) no-repeat center top !important;
+  background-position: 0 -1981px !important;
+  margin-bottom: 7px;
+  font-size: 40px;
+  line-height: 112px;
+}
+.navbar-nav > li > a:not(.btn-oasis):hover::before,
+.navbar-nav .active-list > a:not(.btn-oasis).active-link::before,
+.navbar-nav .active-list > a:not(.btn-oasis).active-parent-link::before  {
+  background-position: 0 -2092px !important;
+}
+.affix li > a:not(.btn-oasis) {
+  top: 0 !important;
+}
+.affix li > a:not(.btn-oasis)::before {
+  display: none !important;
+}
+
+.btn-oasis, .navbar-nav > li > a:not(.btn-oasis) {
+  white-space: normal;
+  padding: 19.5px 5px !important;
+  color: @black;
+}
+.btn-oasis:hover, .btn-oasis.active-parent-link,
+.navbar-nav > li > a:not(.btn-oasis):hover,
+.navbar-nav > li > a:not(.btn-oasis).active-link,
+.navbar-nav > li > a:not(.btn-oasis).active-parent-link  {
+  color: @pink;
+}
+.navbar-nav .btn-oasis, .navbar-nav > li > a:not(.btn-oasis), .navbar-nav .active-list > .btn-oasis.active-link, .navbar-nav .active-list >  .btn-oasis.active-parent-link {
+  top: -171px;
+  position: relative;
+  height: 67px;
+}
+.affix .btn-oasis, .affix a:not(.btn-oasis), .affix .active-list > .btn-oasis.active-link, .affix .active-list >  .btn-oasis.active-parent-link {
+  top: 0;
+}
+.affix .oasis {
+  display: none !important;
+}
+.affix .yeswiki-topnav .dropdown-menu {
+  top: auto !important;
+}
+
+.oasis {
+  width: 107px !important;
+  height: 107px !important;
+  display: block !important;
+  background: url(../images/icons-sprite.png) no-repeat center top !important;
+  background-position: 0 -1870px !important;
+  margin-bottom: 7px;
+  font-size: 40px;
+  line-height: 112px;
+}
+.oasis-map {
+  background-position: 0 -472px !important;
+}
+.btn-oasis:hover .oasis-map {
+  background-position: 0 -589px !important;
+}
+.oasis-house {
+  background-position: 0 -706px !important;
+}
+.btn-oasis:hover .oasis-house {
+  background-position: 0 -823px !important;
+}
+.oasis-pencil {
+  background-position: 0 -940px !important;
+}
+.btn-oasis:hover .oasis-pencil {
+  background-position: 0 -1057px !important;
+}
+.oasis-people {
+  background-position: 0 -1174px !important;
+}
+.btn-oasis:hover .oasis-people {
+  background-position: 0 -1291px !important;
+}
+.oasis-bulb {
+  background-position: 0 -1408px !important;
+}
+.btn-oasis:hover .oasis-bulb {
+  background-position: 0 -1525px !important;
+}
+.oasis-tools {
+  background-position: 0 -1642px !important;
+}
+.btn-oasis:hover .oasis-tools {
+  background-position: 0 -1759px !important;
+}
+
+.footer {
+  font-size: 13px;
+}
+
+.yeswiki-footer {
+  color:@white;
+  background-color: @pink;
+  padding: 50px 10px 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+h1, h4 {
+  color:@brand-primary;
+}
+h3, h5 {
+  color:@pink;
+}
+
+.fullwidth-header a h1 {
+  font-size: 43px;
+  font-weight: 100;
+  font-family: Tahoma, Geneva, sans-serif;
+  letter-spacing: -2px;
+  padding: 55px 0;
+  margin: 0;
+}
+.fullwidth-header a:hover, .fullwidth-header a:hover h1 {
+text-decoration: none;
+}
+
+.vertical-menu li a {
+  color: @black;
+  background-color: @inputbg;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.vertical-menu li a:hover, .vertical-menu li a.active-link, .vertical-menu li a:active, .vertical-menu li a:focus {
+  background-color: @brand-primary;
+  text-decoration: none;
+}
+.menu-left:after, .menu-left::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-right: 1px solid @brand-primary;
+  height: 100%;
+  right: -1px;
+  top:25px;
+}
+.menu-right:before, .menu-right::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-right: 1px solid @brand-primary;
+  height: 100%;
+  left: -1px;
+  top:25px;
+}
+
+
+.filters  {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.filters .panel-default {
+    border: none;
+    box-shadow: none;
+    position: relative;
+    margin-bottom: 35px;
+}
+.filters .panel-heading {
+  border: none;
+  text-transform: uppercase;
+  padding: 5px 14px 4px 70px;
+}
+.filters .panel-body {
+    padding: 10px 15px 0 25px;
+}
+.filters input[type="checkbox"] {
+  margin-top: 0;
+}
+.facette-container .listeListetype .panel-heading:before,
+.facette-container .listeListetype .panel-heading::before,
+.facette-container .checkboxListestatutjuridique .panel-heading:before,
+.facette-container .checkboxListestatutjuridique .panel-heading::before,
+.facette-container .checkboxListerealisationsecologiques .panel-heading:before,
+.facette-container .checkboxListerealisationsecologiques .panel-heading::before,
+.facette-container .checkboxListeservicemutualise .panel-heading:before,
+.facette-container .checkboxListeservicemutualise .panel-heading::before,
+.facette-container .checkboxListestagesetformations .panel-heading:before,
+.facette-container .checkboxListestagesetformations .panel-heading::before,
+.facette-container .checkboxListeautresactivites .panel-heading:before,
+.facette-container .checkboxListeautresactivites .panel-heading::before
+ {
+  background-image: url(../images/icons-sprite.png);
+  background-repeat:no-repeat;
+  width: 50px;
+  height: 50px;
+  content: '';
+  display: block;
+  position: absolute;
+  left:10px;
+  top:-10px;
+}
+.facette-container .listeListeType .panel-heading:before,
+.facette-container .listeListetype .panel-heading::before
+{
+  background-position: 0 -295px;
+}
+.facette-container .listeListeType .panel-heading.collapsed:before,
+.facette-container .listeListetype .panel-heading.collapsed::before
+{
+  background-position: 0 -236px;
+}
+.facette-container .checkboxListeStatutjuridique .panel-heading:before,
+.facette-container .checkboxListestatutjuridique .panel-heading::before
+{
+  background-position: 0 -177px;
+}
+.facette-container .checkboxListeStatutjuridique .panel-heading.collapsed:before,
+.facette-container .checkboxListestatutjuridique .panel-heading.collapsed::before
+{
+  background-position: 0 -118px;
+}
+.facette-container .checkboxListeRealisationsecologiques .panel-heading:before,
+.facette-container .checkboxListerealisationsecologiques .panel-heading::before
+{
+  background-position: 0 -59px;
+}
+.facette-container .checkboxListeRealisationsecologiques .panel-heading.collapsed:before,
+.facette-container .checkboxListerealisationsecologiques .panel-heading.collapsed::before
+{
+  background-position: 0 0;
+}
+
+.facette-container .checkboxListeServicemutualise .panel-heading:before,
+.facette-container .checkboxListeservicemutualise .panel-heading::before
+{
+  background-position: -57px -413px;
+}
+.facette-container .checkboxListeServicemutualise .panel-heading.collapsed:before,
+.facette-container .checkboxListeservicemutualise .panel-heading.collapsed::before
+{
+  background-position: -57px -354px;
+}
+/* planete
+.facette-container .checkboxListestagesetformations .panel-heading:before,
+.facette-container .checkboxListestagesetformations .panel-heading::before
+{
+  background-position: -57px -177px;
+}
+.facette-container .checkboxListestagesetformations .panel-heading.collapsed:before,
+.facette-container .checkboxListestagesetformations .panel-heading.collapsed::before
+{
+  background-position: -57px -118px;
+}*/
+.facette-container .checkboxListestagesetformations .panel-heading:before,
+.facette-container .checkboxListestagesetformations .panel-heading::before
+{
+  background-position: -57px -59px;
+}
+.facette-container .checkboxListestagesetformations .panel-heading.collapsed:before,
+.facette-container .checkboxListestagesetformations .panel-heading.collapsed::before
+{
+  background-position: -57px 0;
+}
+
+.facette-container .checkboxListeautresactivites .panel-heading:before,
+.facette-container .checkboxListeautresactivites .panel-heading::before
+{
+  background-position: -57px -295px;
+}
+.facette-container .checkboxListeautresactivites .panel-heading.collapsed:before,
+.facette-container .checkboxListeautresactivites .panel-heading.collapsed::before
+{
+  background-position: -57px -236px;
+}
+
+/* icones marqueur specifique colibris et legende facette avec marqueur */
+
+.listeListetype input[type=checkbox] {
+    margin-top: 10px;
+}
+.listeListetype .checkbox label::after {
+    content : ' ';
+    background: transparent url("../../../tools/bazar/presentation/images/markers-xs-soft.png") no-repeat 0 0;
+    width: 15px;
+    height: 20px;
+    position: relative;
+    margin-left: 0px;
+    display: inline-block;
+    top: 6px;
+}
+.listeListetype .checkbox:nth-child(1) label::after {
+    background-position: -16px 0px;
+}
+.listeListetype .checkbox:nth-child(2) label::after {
+    background-position: -31px 0px;
+}
+.listeListetype .checkbox:nth-child(3) label::after {
+    background-position: 0 0px;
+}
+.listeListetype .checkbox:nth-child(4) label::after {
+    background-position: -47px 0px;
+}
+
+.glyphicon-graine-d-oasis {
+background:url(../images/graine-d-oasis.png) no-repeat top left;
+display:block;
+width:20px;
+height:20px;
+top:8px !important;
+left:7px !important;
+}
+.glyphicon-oasis-ressource {
+background:url(../images/oasis-ressource.png) no-repeat top left;
+display:block;
+width:20px;
+height:20px;
+top:8px !important;
+left:7px !important;
+}
+.glyphicon-oasis-de-vie {
+background:url(../images/oasis-de-vie.png) no-repeat top left;
+display:block;
+width:20px;
+height:20px;
+top:8px !important;
+left:7px !important;
+}
+.glyphicon-ecosite-sacre {
+background:url(../images/ecosite-sacre.png) no-repeat top left;
+display:block;
+width:20px;
+height:20px;
+top:8px !important;
+left:7px !important;
+}
+.only-colibris {display:block !important;}

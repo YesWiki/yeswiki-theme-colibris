@@ -1,0 +1,23 @@
+{
+  "name": "colibris",
+  "version": "0.1.0",
+  "homepage": "https://github.com/YesWiki/yeswiki-themes",
+  "authors": [
+    "Florian Schmitt <mrflos@gmail.com>"
+  ],
+  "description": "yeswiki theme for colibris",
+  "keywords": [
+    "yeswiki"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
